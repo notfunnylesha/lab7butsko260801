@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+header{
+    width: 100%;
+    background-color: rgb(22, 78, 22);
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    padding: 20PX 0; 
+}
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.nav{
+display: flex;
+justify-content: space-around;
+width: 50%;
+text-align: center;
+
+}
+nav a:not(:last-child){
+    padding-right: 10px;
+}
+.container1{
+    width: 100%;
+    background-color:  rgb(22, 78, 22) ;
+    display: flex;
+    justify-content: space-between;
+}
+.text2{
+    color: white;
+    width: 40%;
+    font-size: 16px;
+    align-self: center;
+}
+.text1{
+    width: 50%;
+}
+.text1 img{
+width: 100%;
+}
+@media(max-width:1200px){
+    
+    .container1{
+        align-items: center;
+        flex-direction: column;
+    }
+    .text1,.text2{
+        width:80%
+    }
+    .text2{
+        padding-top: 10px;
+        font-size: 14px;
+    }
+    .nav{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    
+}
+.wrapper{
+padding: 0 5%;
+background-color:  rgb(22, 78, 22) ;
+
+}
+.sec div{
+    width: 30%;
+}
+.sec img{
+    width: 100%;
+}
+.sec{
+    display: flex;
+    justify-content: space-between;
+    padding: 30PX 0;
+    text-align: center;
+    color: white;
+}
+@media(max-width:500px){
+.sec{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .sec div{
+        width: 80%;
+        padding: 10px 0;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container,.nav{
+        width: 80%;
+    }
+    .nav a{
+        font-size: 12px;
+    }
+}
+.container{
+    width: 40%;
+}
+footer{
+background-color: #002400;
+display: flex;
+color: white;
+padding: 0 2%;
+justify-content: space-around;
+align-items: center;
+width: 96%;
+}
+footer div{
+    padding: 5px 2%;
+}
+footer a{
+    color: rgb(18, 122, 18);
+}
